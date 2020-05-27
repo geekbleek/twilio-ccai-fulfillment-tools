@@ -1,6 +1,6 @@
 {
   "name": "airline-ccai-fulfillment-tools",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A collection of tools to assist in the creation of Airline CCAI cards via fulfillment scripts",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
@@ -9,10 +9,8 @@
     "test": "jest",
     "lint": "eslint \"src/**/*{.js,.jsx,.ts,.tsx}\"",
     "prepare": "npm run build",
-    "preversion": "npm run lint",
     "prepublishOnly": "npm test && npm run lint",
-    "version": "npm run lint && git add -A src",
-    "postversion": "git push && git push --tags"
+    "release": "npm test && npm run lint && standard-version"
   },
   "repository": {
     "type": "git",
