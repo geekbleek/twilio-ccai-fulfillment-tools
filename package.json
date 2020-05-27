@@ -6,11 +6,10 @@
   "types": "lib/index.d.ts",
   "scripts": {
     "build": "tsc",
-    "test": "jest",
     "lint": "eslint \"src/**/*{.js,.jsx,.ts,.tsx}\"",
     "prepare": "npm run build",
-    "prepublishOnly": "npm test && npm run lint",
-    "release": "npm test && npm run lint && standard-version --no-verify"
+    "prepublishOnly": "npm run lint",
+    "release": "npm run lint && standard-version --no-verify"
   },
   "repository": {
     "type": "git",
