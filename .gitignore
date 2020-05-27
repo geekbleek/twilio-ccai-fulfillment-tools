@@ -70,3 +70,6 @@ reports/
 
 # Lib output
 lib/
+
+# Target file
+target.js
