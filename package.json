@@ -1,6 +1,6 @@
 {
   "name": "airline-ccai-fulfillment-tools",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "A collection of tools to assist in the creation of Airline CCAI cards via fulfillment scripts",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
