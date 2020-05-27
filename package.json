@@ -1,0 +1,56 @@
+{
+  "name": "airline-ccai-fulfillment-tools",
+  "version": "1.0.0",
+  "description": "A collection of tools to assist in the creation of Airline CCAI cards via fulfillment scripts",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "test": "jest",
+    "lint": "eslint \"src/**/*{.js,.jsx,.ts,.tsx}\"",
+    "prepare": "npm run build",
+    "preversion": "npm run lint",
+    "prepublishOnly": "npm test && npm run lint",
+    "version": "npm run lint && git add -A src",
+    "postversion": "git push && git push --tags"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DVELP/airline-ccai-fulfillment-tools.git"
+  },
+  "keywords": [
+    "airline",
+    "ccai",
+    "dvelp",
+    "twilio",
+    "google"
+  ],
+  "author": "DVELP",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DVELP/airline-ccai-fulfillment-tools/issues"
+  },
+  "homepage": "https://github.com/DVELP/airline-ccai-fulfillment-tools#readme",
+  "devDependencies": {
+    "@types/jest": "^24.0.15",
+    "@types/prettier": "^1.16.4",
+    "@typescript-eslint/eslint-plugin": "^2.19.2",
+    "@typescript-eslint/parser": "^2.19.2",
+    "eslint": "^6.8.0",
+    "eslint-config-prettier": "^6.10.0",
+    "eslint-plugin-prettier": "^3.1.2",
+    "husky": "^4.2.5",
+    "jest": "^24.8.0",
+    "prettier": "^1.17.0",
+    "pretty-quick": "^2.0.1",
+    "ts-jest": "^24.0.2",
+    "ts-node": "^8.6.2",
+    "tslint": "^5.16.0",
+    "typescript": "^3.9.3"
+  },
+  "husky": {
+    "hooks": {
+      "pre-push": "pretty-quick --staged"
+    }
+  }
+}
