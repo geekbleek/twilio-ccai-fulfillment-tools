@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [2.2.2](https://github.com/DVELP/airline-ccai-fulfillment-tools/compare/v2.2.1...v2.2.2) (2020-05-28)
+
+
+### Bug Fixes
+
+* Corrected spelling of TEMPLATE.DETAIL to detail ([0bfdc2a](https://github.com/DVELP/airline-ccai-fulfillment-tools/commit/0bfdc2adbbb00e417d25ade43638a36de213051a))
+
 ### [2.2.1](https://github.com/DVELP/airline-ccai-fulfillment-tools/compare/v2.2.0...v2.2.1) (2020-05-28)
 
 ## [2.2.0](https://github.com/DVELP/airline-ccai-fulfillment-tools/compare/v2.1.0...v2.2.0) (2020-05-28)
