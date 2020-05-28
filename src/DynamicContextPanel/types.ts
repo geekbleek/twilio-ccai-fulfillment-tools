@@ -31,7 +31,7 @@ export type TItems = TItemBoolean | TItemImage | TItemPhoneNumber | TItemText;
 // TEMPLATES
 export enum TEMPLATES {
     CARD = 'card',
-    DETAIL = 'detrail',
+    DETAIL = 'detail',
     IFRAME = 'iframe',
     MAP = 'map',
     NOTIFICATION = 'notification',
