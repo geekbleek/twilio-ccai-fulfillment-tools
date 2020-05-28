@@ -2,7 +2,7 @@ import { TItemBoolean, ITEMS, SIZES } from '../../types';
 
 interface IBooleanItemInput {
     title?: string;
-    width: SIZES;
+    width?: SIZES;
     data: string;
 }
 
@@ -13,6 +13,6 @@ export const createBooleanItem = ({
 }: IBooleanItemInput): TItemBoolean => ({
     type: ITEMS.BOOLEAN,
     title,
-    width,
+    width: width ?? SIZES.FULL,
     data,
 });

@@ -2,7 +2,7 @@ import { TItemText, ITEMS, SIZES } from '../../types';
 
 interface ITextItemInput {
     title?: string;
-    width: SIZES;
+    width?: SIZES;
     data: string;
 }
 
@@ -13,6 +13,6 @@ export const createTextItem = ({
 }: ITextItemInput): TItemText => ({
     type: ITEMS.TEXT,
     title,
-    width,
+    width: width ?? SIZES.FULL,
     data,
 });

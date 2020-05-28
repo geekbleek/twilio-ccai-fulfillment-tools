@@ -2,7 +2,7 @@ import { TProfile, TItems, TEMPLATES, SIZES } from '../types';
 
 interface IProfileInput {
     items: TItems[];
-    width: SIZES;
+    width?: SIZES;
     title?: string;
 }
 
@@ -13,6 +13,6 @@ export const createProfile = ({
 }: IProfileInput): TProfile => ({
     template: TEMPLATES.PROFILE,
     items,
-    width,
+    width: width ?? SIZES.FULL,
     title,
 });

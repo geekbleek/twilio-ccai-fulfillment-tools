@@ -2,7 +2,7 @@ import { TDetail, TItems, TEMPLATES, SIZES } from '../types';
 
 interface IDetailInput {
     items: TItems[];
-    width: SIZES;
+    width?: SIZES;
     title?: string;
 }
 
@@ -13,6 +13,6 @@ export const createDetail = ({
 }: IDetailInput): TDetail => ({
     template: TEMPLATES.DETAIL,
     items,
-    width,
+    width: width ?? SIZES.FULL,
     title,
 });

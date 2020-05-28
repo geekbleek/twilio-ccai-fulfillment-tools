@@ -5,7 +5,7 @@ interface ITimelineInput {
         title: string;
         subtitle: string;
     }>;
-    width: SIZES;
+    width?: SIZES;
     title?: string;
 }
 
@@ -16,6 +16,6 @@ export const createTimeline = ({
 }: ITimelineInput): TTimeline => ({
     template: TEMPLATES.TIMELINE,
     items,
-    width,
+    width: width ?? SIZES.FULL,
     title,
 });

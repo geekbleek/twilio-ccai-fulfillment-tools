@@ -1,7 +1,7 @@
 import { TIframe, TEMPLATES, SIZES } from '../types';
 
 interface IIframeInput {
-    width: SIZES;
+    width?: SIZES;
     height: string;
     url: string;
     title?: string;
@@ -14,7 +14,7 @@ export const createIframe = ({
     title,
 }: IIframeInput): TIframe => ({
     template: TEMPLATES.IFRAME,
-    width,
+    width: width ?? SIZES.FULL,
     height,
     url,
     title,

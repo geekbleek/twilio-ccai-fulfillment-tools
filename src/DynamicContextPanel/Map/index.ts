@@ -5,13 +5,13 @@ interface IMapInput {
         lat: number;
         lng: number;
     };
-    width: SIZES;
+    width?: SIZES;
     title?: string;
 }
 
 export const createMap = ({ geolocation, width, title }: IMapInput): TMap => ({
     template: TEMPLATES.MAP,
     geolocation,
-    width,
+    width: width ?? SIZES.FULL,
     title,
 });

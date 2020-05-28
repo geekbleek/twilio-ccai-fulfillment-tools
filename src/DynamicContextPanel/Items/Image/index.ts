@@ -2,7 +2,7 @@ import { TItemImage, ITEMS, SIZES } from '../../types';
 
 interface IImageItemInput {
     title?: string;
-    width: SIZES;
+    width?: SIZES;
     data: string;
 }
 
@@ -13,6 +13,6 @@ export const createImageItem = ({
 }: IImageItemInput): TItemImage => ({
     type: ITEMS.IMAGE,
     title,
-    width,
+    width: width ?? SIZES.FULL,
     data,
 });

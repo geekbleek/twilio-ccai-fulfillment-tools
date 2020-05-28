@@ -2,7 +2,7 @@ import { TItemPhoneNumber, ITEMS, SIZES } from '../../types';
 
 interface IPhoneNumberItemInput {
     title?: string;
-    width: SIZES;
+    width?: SIZES;
     data: string;
 }
 
@@ -13,6 +13,6 @@ export const createPhoneNumberItem = ({
 }: IPhoneNumberItemInput): TItemPhoneNumber => ({
     type: ITEMS.PHONE_NUMBER,
     title,
-    width,
+    width: width ?? SIZES.FULL,
     data,
 });
