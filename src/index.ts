@@ -14,3 +14,4 @@ export { createBooleanItem } from './DynamicContextPanel/Items/Boolean';
 export { createImageItem } from './DynamicContextPanel/Items/Image';
 export { createPhoneNumberItem } from './DynamicContextPanel/Items/PhoneNumber';
 export { createTextItem } from './DynamicContextPanel/Items/Text';
+export { TEMPLATES, SIZES, ITEMS } from './DynamicContextPanel/types';
