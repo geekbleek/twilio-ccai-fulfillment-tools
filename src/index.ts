@@ -2,6 +2,9 @@ export {
     createDynamicContextPanelDocument,
     createDynamicContextPanelMap,
     createDynamicContextPanelList,
+    TDocumentContext,
+    TListContext,
+    TMapContext,
 } from './DynamicContextPanel';
 export { createCard } from './DynamicContextPanel/Card';
 export { createDetail } from './DynamicContextPanel/Detail';
@@ -14,4 +17,23 @@ export { createBooleanItem } from './DynamicContextPanel/Items/Boolean';
 export { createImageItem } from './DynamicContextPanel/Items/Image';
 export { createPhoneNumberItem } from './DynamicContextPanel/Items/PhoneNumber';
 export { createTextItem } from './DynamicContextPanel/Items/Text';
-export { TEMPLATES, SIZES, ITEMS } from './DynamicContextPanel/types';
+export {
+    TEMPLATES,
+    ITEMS,
+    ITemplate,
+    TCard,
+    TItemBoolean,
+    TItemImage,
+    TItemPhoneNumber,
+    TItemText,
+    TMap,
+    IItem,
+    SIZES,
+    TDetail,
+    TIframe,
+    TItems,
+    TNotification,
+    TProfile,
+    TTemplates,
+    TTimeline,
+} from './DynamicContextPanel/types';

@@ -28,9 +28,12 @@ interface IContext<T extends SYNC_OBJECT_TYPES, U extends TDatas> {
     };
 }
 
-type TDocumentContext = IContext<SYNC_OBJECT_TYPES.DOCUMENT, TDocumentData>;
-type TListContext = IContext<SYNC_OBJECT_TYPES.LIST, TListData>;
-type TMapContext = IContext<SYNC_OBJECT_TYPES.MAP, TMapData>;
+export type TDocumentContext = IContext<
+    SYNC_OBJECT_TYPES.DOCUMENT,
+    TDocumentData
+>;
+export type TListContext = IContext<SYNC_OBJECT_TYPES.LIST, TListData>;
+export type TMapContext = IContext<SYNC_OBJECT_TYPES.MAP, TMapData>;
 
 const LIFESPAN = 99;
 
