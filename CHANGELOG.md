@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [2.3.0](https://github.com/DVELP/airline-ccai-fulfillment-tools/compare/v2.2.2...v2.3.0) (2020-05-28)
+
+
+### Features
+
+* Add exports of all types for use by downloaders ([5598ce2](https://github.com/DVELP/airline-ccai-fulfillment-tools/commit/5598ce296d4a3d10a804abb79eaa4f518c87d326))
+
 ### [2.2.2](https://github.com/DVELP/airline-ccai-fulfillment-tools/compare/v2.2.1...v2.2.2) (2020-05-28)
 
 
