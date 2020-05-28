@@ -10,7 +10,8 @@
     "prepare": "npm run build",
     "prepublishOnly": "npm run lint",
     "release": "npm run lint && standard-version --no-verify",
-    "pushAndPublish": "git push --follow-tags origin master && npm publish"
+    "pushAndPublish": "git push --follow-tags origin master && npm publish",
+    "rpp": "npm run release && npm run pushAndPublish"
   },
   "repository": {
     "type": "git",
