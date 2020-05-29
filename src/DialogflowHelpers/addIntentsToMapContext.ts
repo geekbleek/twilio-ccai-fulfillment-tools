@@ -5,14 +5,13 @@ import {
     createDetail,
     SIZES,
 } from '..';
-import { ApiClientObjectMap } from 'actions-on-google/dist/common';
 import { GoogleCloudDialogflowV2WebhookRequest } from 'actions-on-google';
 
 export const addIntentsToMapContext = (
     mapContext: TMapContext,
-    dfRequest: GoogleCloudDialogflowV2WebhookRequest,
-    parameters?: ApiClientObjectMap<string>
+    dfRequest: GoogleCloudDialogflowV2WebhookRequest
 ): TMapContext => {
+    const parameters = dfRequest.queryResult?.parameters;
     if (parameters) {
         const intentParams: TItemText[] = [];
         Object.keys(parameters).forEach((param) => {
