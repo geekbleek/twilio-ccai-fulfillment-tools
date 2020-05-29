@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [2.4.0](https://github.com/DVELP/airline-ccai-fulfillment-tools/compare/v2.3.2...v2.4.0) (2020-05-29)
+
+
+### Features
+
+* Added DialogflowHelper functions ([d527d7f](https://github.com/DVELP/airline-ccai-fulfillment-tools/commit/d527d7f6c9f2a8888c2d3b85a008e851e22a19bb))
+
 ### [2.3.2](https://github.com/DVELP/airline-ccai-fulfillment-tools/compare/v2.3.1...v2.3.2) (2020-05-29)
 
 ### [2.3.1](https://github.com/DVELP/airline-ccai-fulfillment-tools/compare/v2.3.0...v2.3.1) (2020-05-28)
