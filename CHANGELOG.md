@@ -2,6 +2,17 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [3.0.0](https://github.com/DVELP/airline-ccai-fulfillment-tools/compare/v2.4.0...v3.0.0) (2020-05-29)
+
+
+### ⚠ BREAKING CHANGES
+
+* Fix createMapHandler to return correct shape function
+
+### Bug Fixes
+
+* Fix createMapHandler to return correct shape function ([38e84c1](https://github.com/DVELP/airline-ccai-fulfillment-tools/commit/38e84c1a6f54a89966d94cf26ad278e68721993e))
+
 ## [2.4.0](https://github.com/DVELP/airline-ccai-fulfillment-tools/compare/v2.3.2...v2.4.0) (2020-05-29)
 
 
