@@ -37,3 +37,6 @@ export {
     TTemplates,
     TTimeline,
 } from './DynamicContextPanel/types';
+export { addIntentsToMapContext } from './DialogflowHelpers/addIntentsToMapContext';
+export { createMapHandler } from './DialogflowHelpers/createMapHandler';
+export { findContext } from './DialogflowHelpers/findContext';
