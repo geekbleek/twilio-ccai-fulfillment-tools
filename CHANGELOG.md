@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [3.0.1](https://github.com/DVELP/airline-ccai-fulfillment-tools/compare/v3.0.0...v3.0.1) (2020-05-29)
+
+
+### Bug Fixes
+
+* Reduce number of required args for helper functions ([09793c0](https://github.com/DVELP/airline-ccai-fulfillment-tools/commit/09793c044cc5ed1ca54ef68bcc43652e03e3307a))
+
 ## [3.0.0](https://github.com/DVELP/airline-ccai-fulfillment-tools/compare/v2.4.0...v3.0.0) (2020-05-29)
 
 
