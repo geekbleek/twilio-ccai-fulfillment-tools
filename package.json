@@ -1,7 +1,7 @@
 {
-  "name": "airline-ccai-fulfillment-tools-test",
+  "name": "twilio-ccai-fulfillment-tools",
   "version": "2.3.1",
-  "description": "A collection of tools to assist in the creation of Airline CCAI cards via fulfillment scripts",
+  "description": "A collection of tools to assist in the creation of Twilio CCAI Integration cards via fulfillment scripts",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
   "scripts": {
