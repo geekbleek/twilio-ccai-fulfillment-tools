@@ -6,12 +6,10 @@ import { WebhookClient } from 'dialogflow-fulfillment';
 import { addIntentsToMapContext } from './addIntentsToMapContext';
 
 export const createMapHandler = (
-    createContext: () => TMapContext | undefined
-) => (
-    agent: WebhookClient,
+    createContext: () => TMapContext | undefined,
     dfRequest: GoogleCloudDialogflowV2WebhookRequest,
     parameters?: ApiClientObjectMap<string>
-): void => {
+) => (agent: WebhookClient): void => {
     if (dfRequest.queryResult?.fulfillmentText) {
         agent.add(dfRequest.queryResult.fulfillmentText);
     }
