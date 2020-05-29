@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [3.1.0](https://github.com/DVELP/airline-ccai-fulfillment-tools/compare/v3.0.1...v3.1.0) (2020-05-29)
+
+
+### Features
+
+* Added createMapHandler parameter for optionally adding intent detail cards, default true ([6a64d83](https://github.com/DVELP/airline-ccai-fulfillment-tools/commit/6a64d83eca3d2ba8c91e93bf4b9fa726eb63d094))
+
 ### [3.0.1](https://github.com/DVELP/airline-ccai-fulfillment-tools/compare/v3.0.0...v3.0.1) (2020-05-29)
 
 
