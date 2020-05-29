@@ -6,14 +6,17 @@ import { addIntentsToMapContext } from './addIntentsToMapContext';
 
 export const createMapHandler = (
     createContext: () => TMapContext | undefined,
-    dfRequest: GoogleCloudDialogflowV2WebhookRequest
+    dfRequest: GoogleCloudDialogflowV2WebhookRequest,
+    withIntentDetailsAdded = true
 ) => (agent: WebhookClient): void => {
     if (dfRequest.queryResult?.fulfillmentText) {
         agent.add(dfRequest.queryResult.fulfillmentText);
     }
     const mapContext = createContext();
     if (mapContext) {
-        addIntentsToMapContext(mapContext, dfRequest);
+        if (withIntentDetailsAdded) {
+            addIntentsToMapContext(mapContext, dfRequest);
+        }
         agent.setContext(mapContext);
     }
 };
