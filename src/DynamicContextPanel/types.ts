@@ -41,6 +41,7 @@ export enum TEMPLATES {
 
 export interface ITemplate<T extends TEMPLATES> {
     title?: string; // TODO Can every template have a title?
+    position?: number;
     template: T;
 }
 

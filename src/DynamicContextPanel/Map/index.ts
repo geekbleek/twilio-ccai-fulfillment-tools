@@ -1,6 +1,7 @@
 import { TMap, TEMPLATES, SIZES } from '../types';
 
 interface IMapInput {
+    position?: number;
     geolocation: {
         lat: number;
         lng: number;
@@ -9,9 +10,15 @@ interface IMapInput {
     title?: string;
 }
 
-export const createMap = ({ geolocation, width, title }: IMapInput): TMap => ({
+export const createMap = ({
+    geolocation,
+    width,
+    title,
+    position,
+}: IMapInput): TMap => ({
     template: TEMPLATES.MAP,
     geolocation,
     width: width ?? SIZES.FULL,
     title,
+    position,
 });
