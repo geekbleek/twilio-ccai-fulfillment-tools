@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [3.2.0](https://github.com/DVELP/airline-ccai-fulfillment-tools/compare/v3.1.0...v3.2.0) (2020-06-02)
+
+
+### Features
+
+* Add ability to define position for DCP templates ([1b4fcf6](https://github.com/DVELP/airline-ccai-fulfillment-tools/commit/1b4fcf63e3dba122ec5b9acfbb14f40d65e8497c))
+
 ## [3.1.0](https://github.com/DVELP/airline-ccai-fulfillment-tools/compare/v3.0.1...v3.1.0) (2020-05-29)
 
 
