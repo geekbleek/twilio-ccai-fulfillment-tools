@@ -40,3 +40,5 @@ export {
 export { addIntentsToMapContext } from './DialogflowHelpers/addIntentsToMapContext';
 export { createMapHandler } from './DialogflowHelpers/createMapHandler';
 export { findContext } from './DialogflowHelpers/findContext';
+export { addRoutingAttributesContext } from './DialogflowHelpers/addRoutingAttributesContext';
+export { addTaskAttributesContext } from './DialogflowHelpers/addTaskAttributesContext';

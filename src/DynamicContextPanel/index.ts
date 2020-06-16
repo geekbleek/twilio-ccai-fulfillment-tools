@@ -7,7 +7,7 @@ enum SYNC_OBJECT_TYPES {
     MAP = 'map',
 }
 
-interface IStringKeyMap<T> {
+export interface IStringKeyMap<T> {
     [key: string]: T;
 }
 
@@ -25,7 +25,6 @@ interface IContext<T extends SYNC_OBJECT_TYPES, U extends TDatas> {
             sync_object_type: T;
             data: U;
         };
-        routing_attributes?: IStringKeyMap<unknown>;
     };
 }
 
@@ -39,8 +38,7 @@ export type TMapContext = IContext<SYNC_OBJECT_TYPES.MAP, TMapData>;
 const LIFESPAN = 99;
 
 export const createDynamicContextPanelDocument = (
-    templates: TDocumentData,
-    routingAttributes?: IStringKeyMap<unknown>
+    templates: TDocumentData
 ): TDocumentContext => ({
     name: 'sync-attributes',
     lifespan: LIFESPAN,
@@ -49,13 +47,11 @@ export const createDynamicContextPanelDocument = (
             sync_object_type: SYNC_OBJECT_TYPES.DOCUMENT,
             data: templates,
         },
-        routing_attributes: routingAttributes,
     },
 });
 
 export const createDynamicContextPanelList = (
-    templates: TListData,
-    routingAttributes?: IStringKeyMap<unknown>
+    templates: TListData
 ): TListContext => ({
     name: 'sync-attributes',
     lifespan: LIFESPAN,
@@ -64,13 +60,11 @@ export const createDynamicContextPanelList = (
             sync_object_type: SYNC_OBJECT_TYPES.LIST,
             data: templates,
         },
-        routing_attributes: routingAttributes,
     },
 });
 
 export const createDynamicContextPanelMap = (
-    templates: TMapData,
-    routingAttributes?: IStringKeyMap<unknown>
+    templates: TMapData
 ): TMapContext => ({
     name: 'sync-attributes',
     lifespan: LIFESPAN,
@@ -79,6 +73,5 @@ export const createDynamicContextPanelMap = (
             sync_object_type: SYNC_OBJECT_TYPES.MAP,
             data: templates,
         },
-        routing_attributes: routingAttributes,
     },
 });
