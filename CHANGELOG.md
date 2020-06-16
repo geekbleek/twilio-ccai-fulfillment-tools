@@ -2,6 +2,17 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [4.0.0](https://github.com/DVELP/airline-ccai-fulfillment-tools/compare/v3.3.1...v4.0.0) (2020-06-16)
+
+
+### ⚠ BREAKING CHANGES
+
+* Add specific addAttributes functions for task and routing attrs
+
+### Features
+
+* Add specific addAttributes functions for task and routing attrs ([7c16b22](https://github.com/DVELP/airline-ccai-fulfillment-tools/commit/7c16b22f4cd9d6a235fc8b5b3350f1bac2b2dd5a))
+
 ### [3.3.1](https://github.com/DVELP/airline-ccai-fulfillment-tools/compare/v3.3.0...v3.3.1) (2020-06-15)
 
 
