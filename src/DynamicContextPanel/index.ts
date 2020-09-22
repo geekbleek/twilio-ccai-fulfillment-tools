@@ -35,7 +35,7 @@ export type TDocumentContext = IContext<
 export type TListContext = IContext<SYNC_OBJECT_TYPES.LIST, TListData>;
 export type TMapContext = IContext<SYNC_OBJECT_TYPES.MAP, TMapData>;
 
-const LIFESPAN = 99;
+const LIFESPAN = 1;
 
 export const createDynamicContextPanelDocument = (
     templates: TDocumentData
