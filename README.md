@@ -10,7 +10,7 @@ Don't forget to check the [Changelog](CHANGELOG.md) for new features and fixes!
 
 ## Demo Repository
 
-See the [Owl Insurance](https://github.com/DVELP/owl-insurance/settings) repository for an example that uses this package.
+See the [Owl Insurance](https://github.com/DVELP/owl-insurance) repository for an example that uses this package.
 
 ## Development
 
